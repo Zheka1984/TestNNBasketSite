@@ -21,8 +21,9 @@ import org.junit.runner.notification.Failure;
  */
 public class NewClass {
     public static void main(String[] args) throws IOException
-     {
-      Result result = JUnitCore.runClasses(TestWebDriverTest.class);
+        {
+            //Получение результатов тестирования и запись их в файл
+        Result result = JUnitCore.runClasses(TestWebDriverTest.class);
         System.out.println(result.getFailureCount());
         Date date = new Date();
         SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
@@ -30,16 +31,15 @@ public class NewClass {
         file.createNewFile();
         PrintWriter out = new PrintWriter(file.getAbsoluteFile());
         for(Failure failure : result.getFailures())
-{	
-System.out.println(failure.getTestHeader());
-    System.out.println(failure.getTrace());
-    out.write(failure.getTestHeader());
-    out.write(System.getProperty("line.separator"));
-    out.write(failure.getTrace());
-    out.write(System.getProperty("line.separator"));
-}
-System.out.println(result.wasSuccessful()); 
-out.close();
-     }
-    
-}
+        {	
+        System.out.println(failure.getTestHeader());
+        System.out.println(failure.getTrace());
+        out.write(failure.getTestHeader());
+        out.write(System.getProperty("line.separator"));
+        out.write(failure.getTrace());
+        out.write(System.getProperty("line.separator"));
+        }
+        System.out.println(result.wasSuccessful()); 
+        out.close();
+        }
+        }

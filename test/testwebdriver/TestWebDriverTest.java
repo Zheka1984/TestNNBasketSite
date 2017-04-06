@@ -133,7 +133,7 @@ public void theEnd(){
     @Test
     public void testChekLinkRightAnons() throws InterruptedException
     {
-      tm.clickElement(driver, mp.rightAnons(driver));  
+        tm.clickElement(driver, mp.rightAnons(driver));  
     }
     
     //Проверка первой новости на кликабельность
