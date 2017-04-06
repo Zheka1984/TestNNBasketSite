@@ -8,14 +8,12 @@ package testwebdriver;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.Rectangle;
@@ -23,18 +21,12 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.server.handler.interactions.SendKeyToActiveElement;
 
 /**
  *
  * @author Админ
  */
 class MainPage {
-    
-
-     
-  
    //Методы для левого меню с социальными сетями
     public WebElement nnbasketVKLeft(WebDriver driver)
     {
@@ -78,9 +70,7 @@ class MainPage {
         File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     // Создаем экземпляр BufferedImage для работы с изображением
         BufferedImage img = ImageIO.read(screen);
-//    ImageIO.write(img, "png", new File("image.bmp"));
-    // Получаем размеры элемента
-            
+    // Получаем размеры элемента    
         int width = el.getSize().getWidth();
         int height = el.getSize().getHeight();
     // Создаем прямоуголник (Rectangle) с размерами элемента

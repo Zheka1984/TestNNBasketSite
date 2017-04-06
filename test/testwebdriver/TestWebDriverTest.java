@@ -8,33 +8,20 @@ package testwebdriver;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.Before;
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.rules.TestRule;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
  * @author Админ
  */
 public class TestWebDriverTest  {
-WebDriver driver;
- TestMethods tm = new TestMethods(); 
- MainPage mp = new MainPage();
+    WebDriver driver;
+    TestMethods tm = new TestMethods(); 
+    MainPage mp = new MainPage();
  
 
 @BeforeClass
@@ -46,8 +33,8 @@ public static void startclass(){
 public void start() { 
     driver = new ChromeDriver();
     driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.get("http://www.nn-basket.ru/");
+    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+    driver.get("http://www.nn-basket.ru/");
 }
 @After
 public void theEnd(){

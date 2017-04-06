@@ -9,15 +9,11 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,9 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  * @author Админ
  */
-public class TestMethods {
-   
-    
+public class TestMethods {    
    //Проверка ссылок на внешние ресурсы на кликабельность и правильный адрес,
    //str - актуальный Url, скопированный из html-кода
    public void checkLink(WebDriver driver, WebElement element, String str)
