@@ -15,10 +15,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-/**
- *
- * @author Админ
- */
+//Запуск тестов и запись результатов в файл
 public class NewClass {
     public static void main(String[] args) throws IOException
         {

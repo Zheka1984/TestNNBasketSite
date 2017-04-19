@@ -22,10 +22,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 
-/**
- *
- * @author Админ
- */
+//Элементы на сайте, которые будут тестироваться
 class MainPage {
    //Методы для левого меню с социальными сетями
     public WebElement nnbasketVKLeft(WebDriver driver)

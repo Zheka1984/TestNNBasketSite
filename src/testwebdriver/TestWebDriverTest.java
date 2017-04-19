@@ -14,10 +14,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/**
- *
- * @author Админ
- */
+//Запуск тестов с помощью JUnit
 public class TestWebDriverTest  {
     WebDriver driver;
     TestMethods tm = new TestMethods(); 

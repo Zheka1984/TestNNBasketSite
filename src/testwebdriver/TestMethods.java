@@ -17,10 +17,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- *
- * @author Админ
- */
+//Тестовые методы
 public class TestMethods {    
    //Проверка ссылок на внешние ресурсы на кликабельность и правильный адрес,
    //str - актуальный Url, скопированный из html-кода
